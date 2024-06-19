@@ -7,6 +7,7 @@ export default function AppRouter() {
       <main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/abc" element={<LandingPage />} />
         </Routes>
       </main>
     </Router>
