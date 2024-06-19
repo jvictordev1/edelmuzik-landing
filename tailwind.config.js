@@ -7,7 +7,7 @@ module.exports = {
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    "./index.html"
+    "./index.html",
   ],
   theme: {
     extend: {
@@ -15,12 +15,14 @@ module.exports = {
         sans: ["Roboto", "sans-serif"],
       },
       backgroundImage: {
-        "first-page-bg": "url('images/fpbackground.png')",
+        "first-page-bg": "url('images/DJEDEL-20230401-TULUM-00156.jpg')",
+        "songs-page-bg": "url('images/DJEDEL-20230401-TULUM-00073.jpg')",
       },
       colors: {
-        'primary-red': '#cb4949'
-      }
+        "primary-red": "#cb4949",
+        "about-background-color": "#e3e3e3",
+      },
     },
   },
   plugins: [],
-}
+};
