@@ -3,15 +3,30 @@ export default function Navbar() {
     <nav className="flex backdrop-blur-none fixed max-h-40 w-full items-center justify-between px-16 py-6">
       <a href="/">
         <img
-          className="size-20"
+          className="size-20 hover:size-24 transition-all duration-500"
           src="/images/edelmuzik-logo.png"
           alt="EDELMUZIK logo"
         />
       </a>
       <div className="flex text-2xl gap-8 font-bold">
-        <a href="/about">ABOUT</a>
-        <a href="/songs">SONGS</a>
-        <a href="/contact">CONTACT</a>
+        <a
+          className="hover:px-2 hover:text-red-600 transition-all duration-300"
+          href="/about"
+        >
+          ABOUT
+        </a>
+        <a
+          className="hover:px-2 hover:text-red-600 transition-all duration-300"
+          href="/songs"
+        >
+          SONGS
+        </a>
+        <a
+          className="hover:px-2 hover:text-red-600 transition-all duration-300"
+          href="/contact"
+        >
+          CONTACT
+        </a>
       </div>
     </nav>
   );
