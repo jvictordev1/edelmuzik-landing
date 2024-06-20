@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="flex text-2xl gap-8 font-bold">
         <a href="/about">ABOUT</a>
         <a href="/songs">SONGS</a>
-        <a href="#">CONTACT</a>
+        <a href="/contact">CONTACT</a>
       </div>
     </nav>
   );

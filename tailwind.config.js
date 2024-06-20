@@ -15,8 +15,9 @@ module.exports = {
         sans: ["Roboto", "sans-serif"],
       },
       backgroundImage: {
-        "first-page-bg": "url('images/DJEDEL-20230401-TULUM-00156.jpg')",
-        "songs-page-bg": "url('images/DJEDEL-20230401-TULUM-00073.jpg')",
+        "first-page-bg": "url('images/fpbackground.png')",
+        "songs-page-bg": "url('images/DJEDEL-20230401-TULUM-00156.png')",
+        "contact-page-bg": "url('images/cpbackground.png')",
       },
       colors: {
         "primary-red": "#cb4949",
