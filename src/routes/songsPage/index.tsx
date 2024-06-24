@@ -1,6 +1,5 @@
 import { FaSpotify, FaYoutube } from "react-icons/fa6";
 import { RiSoundcloudFill } from "react-icons/ri";
-import Footer from "../../components/Footer";
 
 export default function SongsPage() {
   return (
@@ -12,13 +11,18 @@ export default function SongsPage() {
             <span className="text-primary-red">FAVORITE</span> PLATFORM
           </h1>
           <div className="flex w-full justify-between mt-4">
-            <a target="_blank" href="#">
+            <a title="Youtube" target="_blank" href="#">
               <FaYoutube className="size-20 text-white" />
             </a>
-            <a target="_blank" href="https://soundcloud.com/edelmuzik#">
+            <a
+              title="Soundcloud"
+              target="_blank"
+              href="https://soundcloud.com/edelmuzik#"
+            >
               <RiSoundcloudFill className="size-20 text-white" />
             </a>
             <a
+              title="Spotify"
               target="_blank"
               href="https://open.spotify.com/artist/71FZZiU3aazM8r1Bm1NkCu"
             >

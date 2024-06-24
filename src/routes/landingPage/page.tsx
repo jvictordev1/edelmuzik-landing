@@ -10,19 +10,28 @@ export default function LandingPage() {
         <div className="w-1/3">
           <img src="/images/del-logo.png" alt="EDELMUZIK logo" />
           <div className="flex justify-center w-full mt-5 gap-8">
-            <a target="_blank" href="https://www.instagram.com/edelmuzik/">
+            <a
+              title="Instagram"
+              target="_blank"
+              href="https://www.instagram.com/edelmuzik/"
+            >
               <FaInstagram className="size-12" />
             </a>
-            <a target="_blank" href="https://soundcloud.com/edelmuzik">
+            <a
+              title="Soundcloud"
+              target="_blank"
+              href="https://soundcloud.com/edelmuzik"
+            >
               <RiSoundcloudLine className="size-12" />
             </a>
             <a
+              title="Spotify"
               target="_blank"
               href="https://open.spotify.com/artist/71FZZiU3aazM8r1Bm1NkCu"
             >
               <AiOutlineSpotify className="size-12" />
             </a>
-            <a target="_blank" href="#">
+            <a title="Youtube" target="_blank" href="#">
               <FiYoutube className="size-12" />
             </a>
           </div>
