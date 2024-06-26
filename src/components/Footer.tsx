@@ -29,7 +29,11 @@ export default function Footer() {
           >
             <AiOutlineSpotify className="size-8" />
           </a>
-          <a title="Youtube" target="_blank" href="#">
+          <a
+            title="Youtube"
+            target="_blank"
+            href="https://youtube.com/@edelmuzik?si=r5NYuiQVl5F5t_u5"
+          >
             <FiYoutube className="size-8" />
           </a>
         </div>

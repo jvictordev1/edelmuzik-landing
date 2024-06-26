@@ -84,7 +84,11 @@ export default function LandingPage() {
               </a>
             </motion.li>
             <motion.li variants={iconsVariants}>
-              <a title="Youtube" target="_blank" href="#">
+              <a
+                title="Youtube"
+                target="_blank"
+                href="https://youtube.com/@edelmuzik?si=r5NYuiQVl5F5t_u5"
+              >
                 <FiYoutube className="size-12" />
               </a>
             </motion.li>
