@@ -7,18 +7,17 @@ import SongsPage from "./songsPage";
 
 export default function AppRouter() {
   return (
-    <Router>
-      <main className="font-sans">
+    <>
+      <Router>
+        <Navbar />
         <Routes>
-          <Route element={<Navbar />}>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/songs" element={<SongsPage />} />
-          </Route>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="songs" element={<SongsPage />} />
           {/* <Route path="*" element={<LandingPage />} />  fazer rota 404*/}
         </Routes>
-      </main>
-    </Router>
+      </Router>
+    </>
   );
 }

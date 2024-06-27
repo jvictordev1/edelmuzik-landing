@@ -51,6 +51,7 @@ export default function AboutPage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             variants={sectionVariants}
             className="flex justify-center flex-col items-center gap-5"
           >
