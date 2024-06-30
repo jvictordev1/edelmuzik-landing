@@ -40,7 +40,7 @@ const Tab = ({ text, selected, setSelected, path }: TabProps) => {
         selected
           ? "text-white"
           : "text-gray-600 hover:text-gray-900 dark:hover:text-red-500"
-      } relative cursor-pointer rounded-md px-2 py-1 text-lg font-bold transition-colors`}
+      } relative cursor-pointer rounded-md px-2 py-1 text-xl font-bold transition-colors`}
     >
       <span className="relative z-10">{text}</span>
       {selected && (

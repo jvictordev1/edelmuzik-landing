@@ -56,7 +56,7 @@ export default function SongsPage() {
               target="_blank"
               href="https://youtube.com/@edelmuzik?si=r5NYuiQVl5F5t_u5"
             >
-              <FaYoutube className="md:size-20 min-[500px]:size-16 size-14 text-white" />
+              <FaYoutube className="md:size-20 min-[500px]:size-16 size-14 text-white hover:scale-125 transition-all" />
             </motion.a>
             <motion.a
               variants={anchorVariant}
@@ -64,7 +64,7 @@ export default function SongsPage() {
               target="_blank"
               href="https://soundcloud.com/edelmuzik#"
             >
-              <RiSoundcloudFill className="md:size-20 min-[500px]:size-16 size-14 text-white" />
+              <RiSoundcloudFill className="md:size-20 min-[500px]:size-16 size-14 text-white hover:scale-125 transition-all" />
             </motion.a>
             <motion.a
               variants={anchorVariant}
@@ -72,7 +72,7 @@ export default function SongsPage() {
               target="_blank"
               href="https://open.spotify.com/artist/71FZZiU3aazM8r1Bm1NkCu"
             >
-              <FaSpotify className="md:size-20 min-[500px]:size-16 size-14 text-white" />
+              <FaSpotify className="md:size-20 min-[500px]:size-16 size-14 text-white hover:scale-125 transition-all" />
             </motion.a>
           </motion.div>
         </motion.div>

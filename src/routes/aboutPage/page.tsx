@@ -47,7 +47,7 @@ export default function AboutPage() {
   };
   const pClass =
     "lg:w-[800px] md:w-[530px] w-[80%] text-center lg:text-2xl md:text-xl text-md text-zinc-800";
-  const imgClass = "lg:max-w-sm md:max-w-80 max-w-60";
+  const imgClass = "lg:max-w-md md:max-w-80 max-w-60";
   const scrollRef = useRef(null);
   return (
     <>
@@ -84,7 +84,7 @@ export default function AboutPage() {
             >
               <motion.img
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.06,
                   transition: { duration: 0.4, ease: "easeInOut" },
                 }}
                 className={imgClass}
@@ -121,7 +121,7 @@ export default function AboutPage() {
             >
               <motion.img
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.06,
                   transition: { duration: 0.4, ease: "easeInOut" },
                 }}
                 variants={imagesVariant2}
@@ -131,7 +131,7 @@ export default function AboutPage() {
               />
               <motion.img
                 whileHover={{
-                  scale: 1.2,
+                  scale: 1.06,
                   transition: { duration: 0.4, ease: "easeInOut" },
                 }}
                 variants={imagesVariant2}

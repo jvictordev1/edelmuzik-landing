@@ -62,7 +62,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://www.instagram.com/edelmuzik/"
               >
-                <FaInstagram className="lg:size-12 md:size-10 size-8" />
+                <FaInstagram className="lg:size-12 md:size-10 size-8 hover:scale-125 transition-all" />
               </a>
             </motion.li>
             <motion.li variants={iconsVariants}>
@@ -71,7 +71,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://soundcloud.com/edelmuzik"
               >
-                <RiSoundcloudLine className="lg:size-12 md:size-10 size-8" />
+                <RiSoundcloudLine className="lg:size-12 md:size-10 size-8 hover:scale-125 transition-all" />
               </a>
             </motion.li>
             <motion.li variants={iconsVariants}>
@@ -80,7 +80,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://open.spotify.com/artist/71FZZiU3aazM8r1Bm1NkCu"
               >
-                <AiOutlineSpotify className="lg:size-12 md:size-10 size-8" />
+                <AiOutlineSpotify className="lg:size-12 md:size-10 size-8 hover:scale-125 transition-all" />
               </a>
             </motion.li>
             <motion.li variants={iconsVariants}>
@@ -89,7 +89,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://youtube.com/@edelmuzik?si=r5NYuiQVl5F5t_u5"
               >
-                <FiYoutube className="lg:size-12 md:size-10 size-8" />
+                <FiYoutube className="lg:size-12 md:size-10 size-8 hover:scale-125 transition-all" />
               </a>
             </motion.li>
           </motion.ul>

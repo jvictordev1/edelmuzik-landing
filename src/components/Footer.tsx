@@ -13,28 +13,28 @@ export default function Footer() {
             target="_blank"
             href="https://www.instagram.com/edelmuzik/"
           >
-            <FaInstagram className="size-8" />
+            <FaInstagram className="size-8 hover:scale-125 transition-all" />
           </a>
           <a
             title="Soundcloud"
             target="_blank"
             href="https://soundcloud.com/edelmuzik"
           >
-            <RiSoundcloudLine className="size-8" />
+            <RiSoundcloudLine className="size-8 hover:scale-125 transition-all" />
           </a>
           <a
             title="Spotify"
             target="_blank"
             href="https://open.spotify.com/artist/71FZZiU3aazM8r1Bm1NkCu"
           >
-            <AiOutlineSpotify className="size-8" />
+            <AiOutlineSpotify className="size-8 hover:scale-125 transition-all" />
           </a>
           <a
             title="Youtube"
             target="_blank"
             href="https://youtube.com/@edelmuzik?si=r5NYuiQVl5F5t_u5"
           >
-            <FiYoutube className="size-8" />
+            <FiYoutube className="size-8 hover:scale-125 transition-all" />
           </a>
         </div>
       </footer>

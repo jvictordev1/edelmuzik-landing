@@ -127,7 +127,7 @@ export default function ContactPage() {
             <motion.div variants={formItemsVariant} className="flex flex-col">
               <label
                 htmlFor="from-name"
-                className="min-[850px]:text-lg text-md"
+                className="min-[850px]:text-xl text-md font-medium"
               >
                 NAME:
               </label>
@@ -136,13 +136,16 @@ export default function ContactPage() {
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 placeholder="John Jones"
-                className="bg-transparent border-solid border-white border-2 rounded-xl min-[850px]:h-12 h-8 min-[850px]:text-md text-sm text-bold p-3 font-medium placeholder-zinc-300"
+                className="bg-transparent border-solid border-white border-2 rounded-xl min-[850px]:h-12 h-8 min-[850px]:text-xl text-sm text-bold p-3 font-medium placeholder-zinc-300"
                 type="text"
                 id="from-name"
               />
             </motion.div>
             <motion.div variants={formItemsVariant} className="flex flex-col">
-              <label htmlFor="email" className="min-[850px]:text-lg text-md">
+              <label
+                htmlFor="email"
+                className="min-[850px]:text-xl text-md font-medium"
+              >
                 EMAIL:
               </label>
               <input
@@ -150,13 +153,16 @@ export default function ContactPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
                 placeholder="john@jones.com"
-                className="bg-transparent border-solid border-white border-2 rounded-xl min-[850px]:h-12 h-8 min-[850px]:text-md text-sm text-bold p-3 font-medium placeholder-zinc-300"
+                className="bg-transparent border-solid border-white border-2 rounded-xl min-[850px]:h-12 h-8 min-[850px]:text-xl text-sm text-bold p-3 font-medium placeholder-zinc-300"
                 type="email"
                 id="email"
               />
             </motion.div>
             <motion.div variants={formItemsVariant} className="flex flex-col">
-              <label htmlFor="message" className="min-[850px]:text-lg text-md">
+              <label
+                htmlFor="message"
+                className="min-[850px]:text-xl text-md font-medium"
+              >
                 MESSAGE:
               </label>
               <textarea
@@ -164,7 +170,7 @@ export default function ContactPage() {
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
                 placeholder="Type your message here..."
-                className="bg-transparent border-solid resize-none border-white border-2 rounded-xl min-[850px]:h-44 h-28 min-[850px]:text-md text-sm text-bold p-3 font-medium placeholder-zinc-300"
+                className="bg-transparent border-solid resize-none border-white border-2 rounded-xl min-[850px]:h-44 h-28 min-[850px]:text-xl text-sm text-bold p-3 font-medium placeholder-zinc-300"
                 id="message"
               />
             </motion.div>
