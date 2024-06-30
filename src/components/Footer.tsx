@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
       <footer className="w-full bottom-0 fixed bottom bg-zinc-950">
-        <div className="flex justify-center w-full py-4 gap-24">
+        <div className="flex justify-center w-full py-4 md:gap-24 gap-14">
           <a
             title="Instagram"
             target="_blank"

@@ -38,7 +38,7 @@ export default function LandingPage() {
   return (
     <section className="h-screen bg-first-page-bg bg-no-repeat bg-cover bg-zinc-900">
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="w-1/3">
+        <div className="lg:w-[500px] md:w-[400px] w-[300px]">
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -62,7 +62,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://www.instagram.com/edelmuzik/"
               >
-                <FaInstagram className="size-12" />
+                <FaInstagram className="lg:size-12 md:size-10 size-8" />
               </a>
             </motion.li>
             <motion.li variants={iconsVariants}>
@@ -71,7 +71,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://soundcloud.com/edelmuzik"
               >
-                <RiSoundcloudLine className="size-12" />
+                <RiSoundcloudLine className="lg:size-12 md:size-10 size-8" />
               </a>
             </motion.li>
             <motion.li variants={iconsVariants}>
@@ -80,7 +80,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://open.spotify.com/artist/71FZZiU3aazM8r1Bm1NkCu"
               >
-                <AiOutlineSpotify className="size-12" />
+                <AiOutlineSpotify className="lg:size-12 md:size-10 size-8" />
               </a>
             </motion.li>
             <motion.li variants={iconsVariants}>
@@ -89,7 +89,7 @@ export default function LandingPage() {
                 target="_blank"
                 href="https://youtube.com/@edelmuzik?si=r5NYuiQVl5F5t_u5"
               >
-                <FiYoutube className="size-12" />
+                <FiYoutube className="lg:size-12 md:size-10 size-8" />
               </a>
             </motion.li>
           </motion.ul>

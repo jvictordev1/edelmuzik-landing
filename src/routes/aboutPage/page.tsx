@@ -44,6 +44,9 @@ export default function AboutPage() {
       transition: { duration: 0.8, delayChildren: 0.3, staggerChildren: 0.6 },
     },
   };
+  const pClass =
+    "lg:w-[600px] md:w-[530px] w-[80%] text-center lg:text-2xl text-md text-zinc-800";
+  const imgClass = "lg:max-w-sm md:max-w-80 max-w-60";
   return (
     <>
       <motion.section className="pt-28 scroll-smooth font-bold flex flex-col gap-32 bg-about-background-color">
@@ -55,11 +58,8 @@ export default function AboutPage() {
             variants={sectionVariants}
             className="flex justify-center flex-col items-center gap-5"
           >
-            <motion.p
-              variants={textVariant}
-              className="w-1/3 text-center text-2xl text-zinc-800"
-            >
-              <span className="text-primary-red font-eckmann text-3xl">
+            <motion.p variants={textVariant} className={pClass}>
+              <span className="text-primary-red font-eckmann lg:text-3xl md:text-2xl text-xl">
                 EDEL
               </span>{" "}
               is a DJ/producer born in{" "}
@@ -80,7 +80,7 @@ export default function AboutPage() {
                   scale: 1.2,
                   transition: { duration: 0.4, ease: "easeInOut" },
                 }}
-                className="max-w-sm"
+                className={imgClass}
                 src="/images/img1-about.png"
                 alt="EDEL playing a track with a view from of ocean in the background."
               />
@@ -95,10 +95,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="flex justify-center flex-col items-center gap-5"
           >
-            <motion.p
-              variants={textVariant}
-              className="w-1/3 text-center text-2xl font-bold text-zinc-800"
-            >
+            <motion.p variants={textVariant} className={pClass}>
               Started{" "}
               <span className="text-primary-red">producing music at 16</span>{" "}
               and over time has had several opportunities to perform at
@@ -111,14 +108,17 @@ export default function AboutPage() {
                 first independent single.
               </span>
             </motion.p>
-            <motion.div variants={imagesVariant2} className="flex gap-20">
+            <motion.div
+              variants={imagesVariant2}
+              className="flex sm:flex-row flex-col sm:gap-20 gap-10"
+            >
               <motion.img
                 whileHover={{
                   scale: 1.2,
                   transition: { duration: 0.4, ease: "easeInOut" },
                 }}
                 variants={imagesVariant2}
-                className="max-w-sm"
+                className={imgClass}
                 src="/images/img2-about.png"
                 alt="Close image from EDEL's DJ equipment."
               />
@@ -128,7 +128,7 @@ export default function AboutPage() {
                   transition: { duration: 0.4, ease: "easeInOut" },
                 }}
                 variants={imagesVariant2}
-                className="max-w-sm"
+                className={imgClass}
                 src="/images/img3-about.png"
                 alt="EDEL smiling while uses his DJ equipment with a view of the ocean in the background. ."
               />
@@ -145,10 +145,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="flex justify-center flex-col items-center"
           >
-            <motion.p
-              variants={textVariant}
-              className="w-1/3 text-center text-2xl font-bold text-zinc-800"
-            >
+            <motion.p variants={textVariant} className={pClass}>
               Today, continues to refine his skills as a DJ and producer,
               bringing innovative contributions to the{" "}
               <span className="text-primary-red">
@@ -157,7 +154,7 @@ export default function AboutPage() {
               heavily influenced by his hometown.
             </motion.p>
           </motion.div>
-          <section className="h-dvh bg-edel-playing-about-bg bg-no-repeat bg-cover"></section>
+          <section className="h-svh bg-edel-playing-about-bg bg-no-repeat bg-cover"></section>
         </motion.section>
         <Footer />
       </motion.section>
