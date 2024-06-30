@@ -49,7 +49,7 @@ export default function AboutPage() {
   const imgClass = "lg:max-w-sm md:max-w-80 max-w-60";
   return (
     <>
-      <motion.section className="pt-28 scroll-smooth font-bold flex flex-col gap-32 bg-about-background-color">
+      <motion.section className="sm:pt-28 pt-24 scroll-smooth font-bold flex flex-col gap-32 bg-about-background-color">
         <motion.section viewport={{ once: true }} className="flex flex-col">
           <motion.div
             initial="hidden"

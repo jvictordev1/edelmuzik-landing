@@ -36,8 +36,8 @@ export default function LandingPage() {
     hidden: { opacity: 0, y: 100, transition: { duration: 0.2 } },
   };
   return (
-    <section className="h-screen bg-first-page-bg bg-no-repeat bg-cover bg-zinc-900">
-      <div className="flex flex-col justify-center items-center w-full h-full">
+    <section className="h-screen w-full bg-first-page-bg bg-no-repeat bg-cover bg-zinc-900">
+      <div className="flex flex-col justify-center items-center h-full">
         <div className="lg:w-[500px] md:w-[400px] w-[300px]">
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}

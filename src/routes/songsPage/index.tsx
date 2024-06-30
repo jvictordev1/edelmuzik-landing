@@ -40,15 +40,15 @@ export default function SongsPage() {
           initial="hidden"
           animate="visible"
           variants={mainDivVariant}
-          className="w-[470px]"
+          className="md:w-[470px] min-[500px]:w-[300px] w-full min-[500px]:text-left text-center"
         >
-          <h1 className="text-7xl font-bold text-white leading-tight">
+          <h1 className="md:text-7xl min-[500px]:text-6xl text-4xl font-bold text-white leading-tight">
             LISTEN NOW ON YOUR{" "}
             <span className="text-primary-red">FAVORITE</span> PLATFORM
           </h1>
           <motion.div
             variants={anchorVariant}
-            className="flex w-full justify-between mt-4"
+            className="flex w-full justify-between min-[500px]:mt-4 mt-10"
           >
             <motion.a
               variants={anchorVariant}
@@ -56,7 +56,7 @@ export default function SongsPage() {
               target="_blank"
               href="https://youtube.com/@edelmuzik?si=r5NYuiQVl5F5t_u5"
             >
-              <FaYoutube className="size-20 text-white" />
+              <FaYoutube className="md:size-20 min-[500px]:size-16 size-14 text-white" />
             </motion.a>
             <motion.a
               variants={anchorVariant}
@@ -64,7 +64,7 @@ export default function SongsPage() {
               target="_blank"
               href="https://soundcloud.com/edelmuzik#"
             >
-              <RiSoundcloudFill className="size-20 text-white" />
+              <RiSoundcloudFill className="md:size-20 min-[500px]:size-16 size-14 text-white" />
             </motion.a>
             <motion.a
               variants={anchorVariant}
@@ -72,7 +72,7 @@ export default function SongsPage() {
               target="_blank"
               href="https://open.spotify.com/artist/71FZZiU3aazM8r1Bm1NkCu"
             >
-              <FaSpotify className="size-20 text-white" />
+              <FaSpotify className="md:size-20 min-[500px]:size-16 size-14 text-white" />
             </motion.a>
           </motion.div>
         </motion.div>

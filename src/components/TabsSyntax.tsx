@@ -1,8 +1,8 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 interface TabsInterface {
   text: string;
@@ -78,7 +78,10 @@ const ButtonShapeTabs = () => {
           <MenuButton>
             <IoMdMenu className="size-8" />
           </MenuButton>
-          <MenuItems className="flex flex-col items-center" anchor="bottom">
+          <MenuItems
+            className="flex flex-col items-center bg-zinc-950 px-1 py-4 rounded-md"
+            anchor="bottom"
+          >
             {tabs.map((tab) => {
               return (
                 <MenuItem>
