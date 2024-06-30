@@ -16,11 +16,11 @@ module.exports = {
         eckmann: ["Eckmann", "sans-serif"],
       },
       backgroundImage: {
-        "first-page-bg": "url('images/fpbackground.png')",
-        "songs-page-bg": "url('images/songs-page-bg.png')",
-        "contact-page-bg": "url('images/cpbackground.png')",
-        "about-page-bg": "url('images/about-page-bg.png')",
-        "edel-playing-about-bg": "url('images/edel-playing-about-bg.jpg')",
+        "first-page-bg": "url('/fpbackground.png')",
+        "songs-page-bg": "url('/songs-page-bg.png')",
+        "contact-page-bg": "url('/cpbackground.png')",
+        "about-page-bg": "url('/about-page-bg.png')",
+        "edel-playing-about-bg": "url('/edel-playing-about-bg.jpg')",
       },
       colors: {
         "primary-red": "#cb4949",

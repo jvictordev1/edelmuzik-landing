@@ -123,7 +123,7 @@ export default function ContactPage() {
             animate="visible"
             variants={formVariant}
             onSubmit={onFormSubmit}
-            className="flex flex-col min-[850px]:gap-6 gap-4 justify-end pb-24 text-white min-[850px]:w-1/3 w-full"
+            className="flex flex-col min-[850px]:gap-6 gap-4 justify-end pb-24 mt-4 text-white min-[850px]:w-1/3 w-full"
           >
             <motion.div variants={formItemsVariant} className="flex flex-col">
               <label
