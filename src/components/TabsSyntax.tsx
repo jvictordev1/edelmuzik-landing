@@ -1,6 +1,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -45,8 +45,9 @@ const Tab = ({ text, selected, setSelected, path }: TabProps) => {
       <span className="relative z-10">{text}</span>
       {selected && (
         <motion.span
-          layoutId="tab"
-          transition={{ type: "spring", duration: 0.4 }}
+          initial={{ transform: "scaleX(0)" }}
+          animate={{ transform: "scaleX(1)" }}
+          transition={{ type: "spring", duration: 0.6 }}
           className="absolute inset-0 z-0 rounded-md bg-red-500"
         ></motion.span>
       )}
@@ -60,9 +61,6 @@ const ButtonShapeTabs = () => {
       ? window.location.pathname.slice(1).toUpperCase()
       : "/"
   );
-  useEffect(() => {
-    console.log("oi" + selected);
-  }, [selected]);
   return (
     <div className="flex items-center justify-between w-full">
       <Link to="/" title="home" onClick={() => setSelected("/")}>
@@ -96,11 +94,7 @@ const ButtonShapeTabs = () => {
                   >
                     <span className="relative z-10">{tab.text}</span>
                     {selected === tab.text && (
-                      <motion.span
-                        layoutId="tab"
-                        transition={{ type: "spring", duration: 0.4 }}
-                        className="absolute inset-0 z-0 rounded-md bg-red-500"
-                      ></motion.span>
+                      <span className="absolute inset-0 z-0 rounded-md bg-red-500"></span>
                     )}
                   </Link>
                 </MenuItem>

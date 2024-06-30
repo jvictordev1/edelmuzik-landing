@@ -20,7 +20,7 @@ export default function SongsPage() {
   const anchorVariant: Variants = {
     hidden: {
       opacity: 0,
-      y: 100,
+      y: 20,
     },
     visible: {
       opacity: 1,

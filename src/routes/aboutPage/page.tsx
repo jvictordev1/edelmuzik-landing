@@ -45,12 +45,12 @@ export default function AboutPage() {
     },
   };
   const pClass =
-    "lg:w-[600px] md:w-[530px] w-[80%] text-center lg:text-2xl text-md text-zinc-800";
+    "lg:w-[800px] md:w-[530px] w-[80%] text-center lg:text-2xl text-md text-zinc-800";
   const imgClass = "lg:max-w-sm md:max-w-80 max-w-60";
   return (
     <>
-      <motion.section className="sm:pt-28 pt-24 scroll-smooth font-bold flex flex-col gap-32 bg-about-background-color">
-        <motion.section viewport={{ once: true }} className="flex flex-col">
+      <motion.section className="sm:pt-28 pt-24 scroll-smooth font-bold flex flex-col gap-32 bg-about-background-color overflow-scroll">
+        <section className="flex flex-col h-screen">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -86,8 +86,8 @@ export default function AboutPage() {
               />
             </motion.div>
           </motion.div>
-        </motion.section>
-        <motion.section viewport={{ once: true }} className="flex flex-col">
+        </section>
+        <section className="flex flex-col h-screen">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -134,11 +134,8 @@ export default function AboutPage() {
               />
             </motion.div>
           </motion.div>
-        </motion.section>
-        <motion.section
-          viewport={{ once: true }}
-          className="flex flex-col gap-5"
-        >
+        </section>
+        <section className="flex flex-col gap-5">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -155,7 +152,7 @@ export default function AboutPage() {
             </motion.p>
           </motion.div>
           <section className="h-svh bg-edel-playing-about-bg bg-no-repeat bg-cover"></section>
-        </motion.section>
+        </section>
         <Footer />
       </motion.section>
     </>
