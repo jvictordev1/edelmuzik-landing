@@ -104,7 +104,7 @@ export default function ContactPage() {
             className="flex flex-col min-[850px]:gap-20 gap-8"
           >
             <div className="max-w-[470px]">
-              <h1 className="xl:text-7xl min-[850px]:text-6xl text-3xl font-bold text-white leading-tight">
+              <h1 className="md:text-7xl sm:text-5xl text-3xl font-bold text-white leading-tight">
                 CONTACT FOR <span className="text-primary-red">INQUIRIES</span>{" "}
               </h1>
             </div>

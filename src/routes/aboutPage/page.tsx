@@ -46,7 +46,7 @@ export default function AboutPage() {
     },
   };
   const pClass =
-    "lg:w-[800px] md:w-[530px] w-[80%] text-center lg:text-2xl text-md text-zinc-800";
+    "lg:w-[800px] md:w-[530px] w-[80%] text-center lg:text-2xl md:text-xl text-md text-zinc-800";
   const imgClass = "lg:max-w-sm md:max-w-80 max-w-60";
   const scrollRef = useRef(null);
   return (
@@ -62,12 +62,13 @@ export default function AboutPage() {
             whileInView="visible"
             viewport={{ once: true, root: scrollRef }}
             variants={sectionVariants}
-            className="flex justify-center flex-col items-center gap-5"
+            className="flex justify-center flex-col items-center gap-4"
           >
+            <img
+              className="min-[800px]:w-[250px] w-[150px]"
+              src="/images/edel-lettering.png"
+            />
             <motion.p variants={textVariant} className={pClass}>
-              <span className="text-primary-red lg:text-3xl md:text-2xl text-xl">
-                EDEL
-              </span>{" "}
               is a DJ/producer born in{" "}
               <span className="text-primary-red">Bahia, Brazil.</span> His
               musical journey began at home, where his mother introduced him to{" "}
