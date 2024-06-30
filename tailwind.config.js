@@ -13,7 +13,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
-        eckmann: ["Eckmann", "sans-serif"],
       },
       backgroundImage: {
         "first-page-bg": "url('/images/fpbackground.png')",

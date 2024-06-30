@@ -9,7 +9,6 @@ export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
-  console.log(isButtonEnabled);
 
   useEffect(() => {
     emailjs.init("U6hhuaX9wFbEWYKAC");

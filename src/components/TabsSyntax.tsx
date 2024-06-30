@@ -82,7 +82,7 @@ const ButtonShapeTabs = () => {
           >
             {tabs.map((tab) => {
               return (
-                <MenuItem>
+                <MenuItem key={tab.text}>
                   <Link
                     to={tab.path}
                     onClick={() => setSelected(tab.text)}

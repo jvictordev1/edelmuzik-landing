@@ -1,4 +1,5 @@
 import { Variants, motion } from "framer-motion";
+import { useRef } from "react";
 import Footer from "../../components/Footer";
 
 export default function AboutPage() {
@@ -47,19 +48,24 @@ export default function AboutPage() {
   const pClass =
     "lg:w-[800px] md:w-[530px] w-[80%] text-center lg:text-2xl text-md text-zinc-800";
   const imgClass = "lg:max-w-sm md:max-w-80 max-w-60";
+  const scrollRef = useRef(null);
   return (
     <>
-      <motion.section className="sm:pt-28 pt-24 scroll-smooth font-bold flex flex-col gap-32 bg-about-background-color overflow-scroll">
-        <section className="flex flex-col h-screen">
+      <section
+        ref={scrollRef}
+        style={{ overflow: "scroll" }}
+        className="sm:pt-28 pt-24 scroll-smooth font-bold flex flex-col gap-40 bg-[#e3e3e3] overflow-scroll"
+      >
+        <section className="flex flex-col h-max">
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: true, root: scrollRef }}
             variants={sectionVariants}
             className="flex justify-center flex-col items-center gap-5"
           >
             <motion.p variants={textVariant} className={pClass}>
-              <span className="text-primary-red font-eckmann lg:text-3xl md:text-2xl text-xl">
+              <span className="text-primary-red lg:text-3xl md:text-2xl text-xl">
                 EDEL
               </span>{" "}
               is a DJ/producer born in{" "}
@@ -87,12 +93,12 @@ export default function AboutPage() {
             </motion.div>
           </motion.div>
         </section>
-        <section className="flex flex-col h-screen">
+        <section className="flex flex-col h-max">
           <motion.div
             initial="hidden"
             whileInView="visible"
             variants={sectionVariants}
-            viewport={{ once: true }}
+            viewport={{ once: true, root: scrollRef }}
             className="flex justify-center flex-col items-center gap-5"
           >
             <motion.p variants={textVariant} className={pClass}>
@@ -139,7 +145,7 @@ export default function AboutPage() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: true, root: scrollRef }}
             className="flex justify-center flex-col items-center"
           >
             <motion.p variants={textVariant} className={pClass}>
@@ -154,7 +160,7 @@ export default function AboutPage() {
           <section className="h-svh bg-edel-playing-about-bg bg-no-repeat bg-cover"></section>
         </section>
         <Footer />
-      </motion.section>
+      </section>
     </>
   );
 }
